@@ -1,0 +1,8 @@
+#mqtt
+mqtt:
+  uris: tcp://163.179.125.37:18888
+  username: admin
+  password: public
+  in-client-id: ${random.value} # 随机值，使出入站 client ID 不同
+  out-client-id: ${random.value}
+  default-topic: defaultTopic
