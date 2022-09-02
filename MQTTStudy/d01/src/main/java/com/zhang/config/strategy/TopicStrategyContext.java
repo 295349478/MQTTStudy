@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  * 分发策略控制器
- * 收集了所有类型的信息处理:ack等信息处理器放到map中
+ * 收集了所有类型的信息处理:ack等信息处理器放到map中,通过主题进行分类
  */
 @Service
 public class TopicStrategyContext {
