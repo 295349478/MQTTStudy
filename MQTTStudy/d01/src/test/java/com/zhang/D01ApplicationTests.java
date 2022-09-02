@@ -1,7 +1,6 @@
 package com.zhang;
 
-import com.zhang.config.MqttSender;
-import com.zhang.config.User;
+import com.zhang.config.baes.MqttSender;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

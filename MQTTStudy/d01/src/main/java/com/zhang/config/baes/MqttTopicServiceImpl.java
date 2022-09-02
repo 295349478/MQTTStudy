@@ -1,22 +1,24 @@
-package com.zhang.config;
+package com.zhang.config.baes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 
 /**
  * @author: ZPH
  * @date 2022/9/1 21:42
- * @description：主题重写
+ * @description：动态添加主题
  * @version: 1.0
  */
-public class MqttServiceImpl implements MqttService {
+@Service
+public class MqttTopicServiceImpl implements MqttTopicService {
 
     MqttPahoMessageDrivenChannelAdapter adapter;
 
     @Autowired
-    public MqttServiceImpl(MqttPahoMessageDrivenChannelAdapter adapter) {
+    public MqttTopicServiceImpl(MqttPahoMessageDrivenChannelAdapter adapter) {
         this.adapter = adapter;
     }
 

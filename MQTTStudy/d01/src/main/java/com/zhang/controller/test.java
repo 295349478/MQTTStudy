@@ -1,7 +1,6 @@
 package com.zhang.controller;
 
-import com.zhang.config.MqttSender;
-import com.zhang.config.User;
+import com.zhang.config.baes.MqttSender;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -30,6 +29,7 @@ public class test {
 //        user.setUsername(message);
 //        user.setPassword("123");
         mqttSender.sendToMqtt(message);
+        mqttSender.sendWithTopic("test1", message);
         // iMqttSender.sen
         return new ResponseEntity<>("OK", HttpStatus.OK);
     }

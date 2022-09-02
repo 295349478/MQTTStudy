@@ -1,6 +1,6 @@
-package com.zhang.config;
+package com.zhang.config.baes;
 
-public interface MqttService {
+public interface MqttTopicService {
 
     public void addTopic(String topic);
 

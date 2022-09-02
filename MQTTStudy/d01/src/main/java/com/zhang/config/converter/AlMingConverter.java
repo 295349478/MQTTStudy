@@ -1,7 +1,8 @@
-package com.zhang.config;
+package com.zhang.config.converter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zhang.config.User;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,6 @@ import org.springframework.integration.support.AbstractIntegrationMessageBuilder
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageHeaders;
-import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
 import java.io.IOException;
@@ -24,7 +24,7 @@ import java.nio.charset.StandardCharsets;
  * @description：编解码器
  * @version: 1.0
  */
-@Component
+//@Component
 public class AlMingConverter implements MqttMessageConverter {
     private final  static Logger log = LoggerFactory.getLogger(AlMingConverter.class);
 
